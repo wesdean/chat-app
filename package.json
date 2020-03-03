@@ -1,0 +1,23 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A chat app demo using web sockets.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesdean/chat-app.git"
+  },
+  "keywords": [
+    "chat",
+    "websocket"
+  ],
+  "author": "wes@geekdaddydean.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesdean/chat-app/issues"
+  },
+  "homepage": "https://github.com/wesdean/chat-app#readme"
+}
