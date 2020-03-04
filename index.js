@@ -24,6 +24,12 @@ io.on('connection', socket => {
     });
 
     socket.on('typing', data => {
+        console.log(`Typing: ${data.handle}`);
         socket.broadcast.emit('typing', data);
-    })
+    });
+
+    socket.on('typing-stopped', data => {
+        console.log(`Typing stopped: ${data.handle}`);
+        socket.broadcast.emit('typing-stopped', data);
+    });
 });
