@@ -41,7 +41,7 @@ const useStyles = makeStyles({
 const Chat = ({title}) => {
     const classes = useStyles();
 
-    const [socket] = useState(socketClient.connect('http://localhost:4000'));
+    const [socket] = useState(socketClient.connect('https://desolate-eyrie-58645.herokuapp.com/'));
     const [chatText, setChatText] = useState([]);
     const [handle, setHandle] = useState('');
     const [message, setMessage] = useState('');

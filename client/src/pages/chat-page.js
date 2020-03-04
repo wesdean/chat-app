@@ -9,6 +9,12 @@ const useStyles = makeStyles({
     },
     chatContainer: {
         margin: '6px'
+    },
+    works: {
+        color: '#0f0'
+    },
+    noWorks: {
+        color: '#f00'
     }
 });
 
@@ -33,6 +39,16 @@ const ChatPage = () => {
                 This demonstrates a chat app using web sockets. You can select up to 4 chat windows to open in the same window, or open multiple windows.<br/>
                 Each chat window connects to the server and transmits data via web sockets.<br/>
                 See the source on Github at <a href="https://github.com/wesdean/chat-app">https://github.com/wesdean/chat-app</a>.
+            </p>
+            <p>
+                Tested on
+                <ul>
+                    <li>MacOS/Chrome: <span className={classes.works}>works</span></li>
+                    <li>MacOS/Safari: <span className={classes.noWorks}>does not work</span></li>
+                    <li>iOS/Chrome: <span className={classes.noWorks}>does not work</span></li>
+                    <li>iOS/Safari: <span className={classes.noWorks}>does not work</span></li>
+                    <li>iOS/Firefox: <span className={classes.noWorks}>does not work</span></li>
+                </ul>
             </p>
             <form onSubmit={onSubmit}>
                 <label>Number of chat windows:
